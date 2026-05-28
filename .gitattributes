@@ -1,8 +1,23 @@
-# GitHub Linguist Language Detection
+# GitHub Linguist - Language Detection
 
-# Exclude everything by default
-* linguist-detectable=false
-
-# Only detect backend source languages
+# Force detect Java and Python
 *.java linguist-detectable=true
 *.py   linguist-detectable=true
+
+# Exclude frontend
+*.css  linguist-detectable=false
+*.jsx  linguist-detectable=false
+*.js   linguist-detectable=false
+*.html linguist-detectable=false
+*.svg  linguist-detectable=false
+*.md   linguist-detectable=false
+
+# Exclude generated/config
+*.json       linguist-generated=true
+*.xml        linguist-detectable=false
+*.properties linguist-detectable=false
+*.cmd        linguist-detectable=false
+*.txt        linguist-detectable=false
+
+# Exclude Maven wrapper shell script (no extension)
+backend/mvnw linguist-detectable=false
