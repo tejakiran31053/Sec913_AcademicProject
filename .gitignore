@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.env
+.venv
+
+# Java / Spring Boot
+target/
+*.class
+*.jar
+*.war
+.classpath
+.project
+.settings/
+.factorypath
+
+# Node / React
+node_modules/
+dist/
+dist-ssr/
+*.local
+
+# OS
+.DS_Store
+Thumbs.db

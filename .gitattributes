@@ -1,0 +1,8 @@
+# GitHub Linguist Language Detection
+
+# Exclude everything by default
+* linguist-detectable=false
+
+# Only detect backend source languages
+*.java linguist-detectable=true
+*.py   linguist-detectable=true
